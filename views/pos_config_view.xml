@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding="utf-8"?>
+<odoo>
+    <record id="fv_pos_config_view_form" model="ir.ui.view">
+    <field name="name">pos.config.add.field.passcode</field>
+    <field name="model">pos.config</field>
+    <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <div id="product_prices" position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="discount_passcode">
+                    <div class="o_setting_right_pane">
+                        <span class="o_form_label">Discount Password</span>
+                        <div class="content-group mt16">
+                            <field name="discount_passcode" type="password"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>
